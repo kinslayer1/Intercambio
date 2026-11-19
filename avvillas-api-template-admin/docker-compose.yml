@@ -1,0 +1,19 @@
+services:
+  template-admin-avvillas:
+    image: template-admin-avvillas:latest
+    container_name: template-admin-avvillas
+    environment:
+      - PORT=8084
+      - DB_HOST=${DB_HOST}
+      - PUERTO_BD=${PUERTO_BD}
+      - SERVICIO_BD=${SERVICIO_BD}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - URL_GATEWAY=${URL_GATEWAY}
+    ports:
+      - "8084:8084"
+    networks:
+      - avvillas-network
+
+networks:
+  avvillas-network:
+    external: true

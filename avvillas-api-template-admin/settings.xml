@@ -1,0 +1,15 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <proxies>
+        <proxy>
+            <id>proxyavvillas</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>192.168.126.10</host>
+            <port>8080</port>
+            <username></username>
+            <password></password>
+            <nonProxyHosts></nonProxyHosts>
+        </proxy>
+    </proxies>
+</settings>
