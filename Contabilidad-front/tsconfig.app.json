@@ -58,5 +58,9 @@
     "noUncheckedSideEffectImports": true,
     "types": ["vite/client"],
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src", "vite.config.ts"],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
 }
