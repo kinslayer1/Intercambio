@@ -1,0 +1,9 @@
+ services:
+  # Service for up docker in prod mode with NGINX
+  frontend-contabilidad:
+    image: frontend-contabilidad-img
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"
+    container_name: frontend-contabilidad
